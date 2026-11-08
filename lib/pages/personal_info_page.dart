@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'education_page.dart';
 
-/// HALAMAN 2: Informasi pribadi & kontak.
-/// Semua isi (teks, data, kartu, tombol, indikator) ditulis langsung di file ini.
+/// HALAMAN 2: Informasi pribadi & kontak
 class PersonalInfoPage extends StatelessWidget {
   const PersonalInfoPage({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,9 +21,9 @@ class PersonalInfoPage extends StatelessWidget {
                   height: 42,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    color: Color(0x262563EB),
+                    color: const Color(0x262563EB),
                     borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: Color(0x662563EB)),
+                    border: Border.all(color: const Color(0x662563EB)),
                   ),
                   child: const Icon(Icons.person, color: Color(0xFF2563EB), size: 21),
                 ),
@@ -44,26 +42,26 @@ class PersonalInfoPage extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Color(0xFF151B2B),
-                border: Border.all(color: Color(0xFF242C42)),
+                color: const Color(0xFF151B2B),
+                border: Border.all(color: const Color(0xFF242C42)),
                 borderRadius: BorderRadius.circular(16),
               ),
-              child: Column(
+              child: const Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    padding: EdgeInsets.symmetric(vertical: 8),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const SizedBox(
+                        SizedBox(
                           width: 130,
                           child: Text(
                             'Tempat, Tgl Lahir',
                             style: TextStyle(fontWeight: FontWeight.w600, color: Color(0xFF9AA4BC)),
                           ),
                         ),
-                        const Text(': ', style: TextStyle(color: Color(0xFF9AA4BC))),
-                        const Expanded(
+                        Text(': ', style: TextStyle(color: Color(0xFF9AA4BC))),
+                        Expanded(
                           child: Text(
                             'Jakarta, 1 Januari 2005',
                             style: TextStyle(color: Color(0xFFE8ECF5)),
@@ -73,19 +71,19 @@ class PersonalInfoPage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    padding: EdgeInsets.symmetric(vertical: 8),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const SizedBox(
+                        SizedBox(
                           width: 130,
                           child: Text(
                             'Jenis Kelamin',
                             style: TextStyle(fontWeight: FontWeight.w600, color: Color(0xFF9AA4BC)),
                           ),
                         ),
-                        const Text(': ', style: TextStyle(color: Color(0xFF9AA4BC))),
-                        const Expanded(
+                        Text(': ', style: TextStyle(color: Color(0xFF9AA4BC))),
+                        Expanded(
                           child: Text(
                             'Laki-laki',
                             style: TextStyle(color: Color(0xFFE8ECF5)),
@@ -95,19 +93,19 @@ class PersonalInfoPage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    padding: EdgeInsets.symmetric(vertical: 8),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const SizedBox(
+                        SizedBox(
                           width: 130,
                           child: Text(
                             'Agama',
                             style: TextStyle(fontWeight: FontWeight.w600, color: Color(0xFF9AA4BC)),
                           ),
                         ),
-                        const Text(': ', style: TextStyle(color: Color(0xFF9AA4BC))),
-                        const Expanded(
+                        Text(': ', style: TextStyle(color: Color(0xFF9AA4BC))),
+                        Expanded(
                           child: Text(
                             'Islam',
                             style: TextStyle(color: Color(0xFFE8ECF5)),
@@ -117,19 +115,19 @@ class PersonalInfoPage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    padding: EdgeInsets.symmetric(vertical: 8),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const SizedBox(
+                        SizedBox(
                           width: 130,
                           child: Text(
                             'Alamat',
                             style: TextStyle(fontWeight: FontWeight.w600, color: Color(0xFF9AA4BC)),
                           ),
                         ),
-                        const Text(': ', style: TextStyle(color: Color(0xFF9AA4BC))),
-                        const Expanded(
+                        Text(': ', style: TextStyle(color: Color(0xFF9AA4BC))),
+                        Expanded(
                           child: Text(
                             'Jl. Contoh No. 123, Jakarta',
                             style: TextStyle(color: Color(0xFFE8ECF5)),
@@ -139,19 +137,19 @@ class PersonalInfoPage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    padding: EdgeInsets.symmetric(vertical: 8),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const SizedBox(
+                        SizedBox(
                           width: 130,
                           child: Text(
                             'Hobi',
                             style: TextStyle(fontWeight: FontWeight.w600, color: Color(0xFF9AA4BC)),
                           ),
                         ),
-                        const Text(': ', style: TextStyle(color: Color(0xFF9AA4BC))),
-                        const Expanded(
+                        Text(': ', style: TextStyle(color: Color(0xFF9AA4BC))),
+                        Expanded(
                           child: Text(
                             'Coding, membaca, musik',
                             style: TextStyle(color: Color(0xFFE8ECF5)),
@@ -171,9 +169,9 @@ class PersonalInfoPage extends StatelessWidget {
                   height: 42,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    color: Color(0x262563EB),
+                    color: const Color(0x262563EB),
                     borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: Color(0x662563EB)),
+                    border: Border.all(color: const Color(0x662563EB)),
                   ),
                   child: const Icon(Icons.contact_phone, color: Color(0xFF2563EB), size: 21),
                 ),
@@ -193,8 +191,8 @@ class PersonalInfoPage extends StatelessWidget {
               margin: const EdgeInsets.only(bottom: 10),
               padding: const EdgeInsets.all(14),
               decoration: BoxDecoration(
-                color: Color(0xFF151B2B),
-                border: Border.all(color: Color(0xFF242C42)),
+                color: const Color(0xFF151B2B),
+                border: Border.all(color: const Color(0xFF242C42)),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Row(
@@ -204,9 +202,9 @@ class PersonalInfoPage extends StatelessWidget {
                     height: 40,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                      color: Color(0x262563EB),
+                      color: const Color(0x262563EB),
                       borderRadius: BorderRadius.circular(12),
-                      border: Border.all(color: Color(0x662563EB)),
+                      border: Border.all(color: const Color(0x662563EB)),
                     ),
                     child: const Icon(Icons.phone, color: Color(0xFF2563EB), size: 20),
                   ),
@@ -224,8 +222,8 @@ class PersonalInfoPage extends StatelessWidget {
               margin: const EdgeInsets.only(bottom: 10),
               padding: const EdgeInsets.all(14),
               decoration: BoxDecoration(
-                color: Color(0xFF151B2B),
-                border: Border.all(color: Color(0xFF242C42)),
+                color: const Color(0xFF151B2B),
+                border: Border.all(color: const Color(0xFF242C42)),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Row(
@@ -235,9 +233,9 @@ class PersonalInfoPage extends StatelessWidget {
                     height: 40,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                      color: Color(0x262563EB),
+                      color: const Color(0x262563EB),
                       borderRadius: BorderRadius.circular(12),
-                      border: Border.all(color: Color(0x662563EB)),
+                      border: Border.all(color: const Color(0x662563EB)),
                     ),
                     child: const Icon(Icons.email, color: Color(0xFF2563EB), size: 20),
                   ),
@@ -255,8 +253,8 @@ class PersonalInfoPage extends StatelessWidget {
               margin: const EdgeInsets.only(bottom: 10),
               padding: const EdgeInsets.all(14),
               decoration: BoxDecoration(
-                color: Color(0xFF151B2B),
-                border: Border.all(color: Color(0xFF242C42)),
+                color: const Color(0xFF151B2B),
+                border: Border.all(color: const Color(0xFF242C42)),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Row(
@@ -266,9 +264,9 @@ class PersonalInfoPage extends StatelessWidget {
                     height: 40,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                      color: Color(0x262563EB),
+                      color: const Color(0x262563EB),
                       borderRadius: BorderRadius.circular(12),
-                      border: Border.all(color: Color(0x662563EB)),
+                      border: Border.all(color: const Color(0x662563EB)),
                     ),
                     child: const Icon(Icons.camera_alt, color: Color(0xFF2563EB), size: 20),
                   ),
@@ -286,8 +284,8 @@ class PersonalInfoPage extends StatelessWidget {
               margin: const EdgeInsets.only(bottom: 10),
               padding: const EdgeInsets.all(14),
               decoration: BoxDecoration(
-                color: Color(0xFF151B2B),
-                border: Border.all(color: Color(0xFF242C42)),
+                color: const Color(0xFF151B2B),
+                border: Border.all(color: const Color(0xFF242C42)),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Row(
@@ -297,9 +295,9 @@ class PersonalInfoPage extends StatelessWidget {
                     height: 40,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                      color: Color(0x262563EB),
+                      color: const Color(0x262563EB),
                       borderRadius: BorderRadius.circular(12),
-                      border: Border.all(color: Color(0x662563EB)),
+                      border: Border.all(color: const Color(0x662563EB)),
                     ),
                     child: const Icon(Icons.code, color: Color(0xFF2563EB), size: 20),
                   ),
@@ -314,7 +312,6 @@ class PersonalInfoPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 28),
-            // Indikator halaman (titik 2 dari 5)
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -323,7 +320,7 @@ class PersonalInfoPage extends StatelessWidget {
                   width: 8,
                   height: 8,
                   decoration: BoxDecoration(
-                    color: Color(0xFF242C42),
+                    color: const Color(0xFF242C42),
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
@@ -332,7 +329,7 @@ class PersonalInfoPage extends StatelessWidget {
                   width: 24,
                   height: 8,
                   decoration: BoxDecoration(
-                    color: Color(0xFF2563EB),
+                    color: const Color(0xFF2563EB),
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
@@ -341,7 +338,7 @@ class PersonalInfoPage extends StatelessWidget {
                   width: 8,
                   height: 8,
                   decoration: BoxDecoration(
-                    color: Color(0xFF242C42),
+                    color: const Color(0xFF242C42),
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
@@ -350,7 +347,7 @@ class PersonalInfoPage extends StatelessWidget {
                   width: 8,
                   height: 8,
                   decoration: BoxDecoration(
-                    color: Color(0xFF242C42),
+                    color: const Color(0xFF242C42),
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
@@ -359,14 +356,13 @@ class PersonalInfoPage extends StatelessWidget {
                   width: 8,
                   height: 8,
                   decoration: BoxDecoration(
-                    color: Color(0xFF242C42),
+                    color: const Color(0xFF242C42),
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
               ],
             ),
             const SizedBox(height: 18),
-            // Tombol navigasi: Kembali = pop, Lanjut = push
             Row(
               children: [
                 Expanded(

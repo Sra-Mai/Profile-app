@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'personal_info_page.dart';
 
-/// HALAMAN 1: Perkenalan singkat + foto bulat.
-/// Semua isi (teks, foto, kartu, tombol, indikator) ditulis langsung di file ini.
+/// HALAMAN 1: Perkenalan singkat
 class IntroPage extends StatelessWidget {
   const IntroPage({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,7 +12,6 @@ class IntroPage extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              // ---------- HEADER + FOTO BULAT ----------
               Container(
                 width: double.infinity,
                 padding: const EdgeInsets.fromLTRB(24, 48, 24, 32),
@@ -44,12 +41,11 @@ class IntroPage extends StatelessWidget {
                           height: 150,
                           fit: BoxFit.cover,
                           alignment: const Alignment(0, -0.6),
-                          // Kalau file foto belum ada, tampil placeholder
                           errorBuilder: (context, error, stackTrace) {
                             return Container(
                               width: 150,
                               height: 150,
-                              color: Color(0xFF242C42),
+                              color: const Color(0xFF242C42),
                               child: const Icon(
                                 Icons.person,
                                 size: 70,
@@ -78,15 +74,13 @@ class IntroPage extends StatelessWidget {
                   ],
                 ),
               ),
-
-              // ---------- ISI ----------
               Padding(
                 padding: const EdgeInsets.all(24),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
-                      children: const [
+                    const Row(
+                      children: [
                         Icon(Icons.waving_hand, color: Color(0xFF2563EB)),
                         SizedBox(width: 8),
                         Text(
@@ -104,8 +98,8 @@ class IntroPage extends StatelessWidget {
                       width: double.infinity,
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
-                        color: Color(0xFF151B2B),
-                        border: Border.all(color: Color(0xFF242C42)),
+                        color: const Color(0xFF151B2B),
+                        border: Border.all(color: const Color(0xFF242C42)),
                         borderRadius: BorderRadius.circular(16),
                       ),
                       child: const Text(
@@ -122,8 +116,6 @@ class IntroPage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 28),
-
-                    // Indikator halaman (titik 1 dari 5)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -132,7 +124,7 @@ class IntroPage extends StatelessWidget {
                           width: 24,
                           height: 8,
                           decoration: BoxDecoration(
-                            color: Color(0xFF2563EB),
+                            color: const Color(0xFF2563EB),
                             borderRadius: BorderRadius.circular(4),
                           ),
                         ),
@@ -141,7 +133,7 @@ class IntroPage extends StatelessWidget {
                           width: 8,
                           height: 8,
                           decoration: BoxDecoration(
-                            color: Color(0xFF242C42),
+                            color: const Color(0xFF242C42),
                             borderRadius: BorderRadius.circular(4),
                           ),
                         ),
@@ -150,7 +142,7 @@ class IntroPage extends StatelessWidget {
                           width: 8,
                           height: 8,
                           decoration: BoxDecoration(
-                            color: Color(0xFF242C42),
+                            color: const Color(0xFF242C42),
                             borderRadius: BorderRadius.circular(4),
                           ),
                         ),
@@ -159,7 +151,7 @@ class IntroPage extends StatelessWidget {
                           width: 8,
                           height: 8,
                           decoration: BoxDecoration(
-                            color: Color(0xFF242C42),
+                            color: const Color(0xFF242C42),
                             borderRadius: BorderRadius.circular(4),
                           ),
                         ),
@@ -168,15 +160,13 @@ class IntroPage extends StatelessWidget {
                           width: 8,
                           height: 8,
                           decoration: BoxDecoration(
-                            color: Color(0xFF242C42),
+                            color: const Color(0xFF242C42),
                             borderRadius: BorderRadius.circular(4),
                           ),
                         ),
                       ],
                     ),
                     const SizedBox(height: 18),
-
-                    // Tombol navigasi: push ke halaman 2
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton.icon(

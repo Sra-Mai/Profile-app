@@ -8,7 +8,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,7 +21,6 @@ class MyApp extends StatelessWidget {
           primary: Color(0xFF2563EB),
           surface: Color(0xFF151B2B),
         ),
-        // Semua Icon otomatis berwarna biru gelap
         iconTheme: const IconThemeData(color: Color(0xFF2563EB)),
         appBarTheme: const AppBarTheme(
           backgroundColor: Color(0xFF0B0F1A),

@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'skills_page.dart';
 
-/// HALAMAN 3: Pendidikan dari SD sampai kuliah (timeline).
-/// Semua isi (teks, data, kartu, tombol, indikator) ditulis langsung di file ini.
+/// HALAMAN 3: Pendidikan dari SD sampai kuliah 
 class EducationPage extends StatelessWidget {
   const EducationPage({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,9 +21,9 @@ class EducationPage extends StatelessWidget {
                   height: 42,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    color: Color(0x262563EB),
+                    color: const Color(0x262563EB),
                     borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: Color(0x662563EB)),
+                    border: Border.all(color: const Color(0x662563EB)),
                   ),
                   child: const Icon(Icons.school, color: Color(0xFF2563EB), size: 21),
                 ),
@@ -45,7 +43,6 @@ class EducationPage extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  // Kolom kiri: ikon bulat + garis timeline
                   Column(
                     children: [
                       Container(
@@ -53,30 +50,29 @@ class EducationPage extends StatelessWidget {
                         height: 44,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
-                          color: Color(0x262563EB),
+                          color: const Color(0x262563EB),
                           shape: BoxShape.circle,
-                          border: Border.all(color: Color(0x662563EB)),
+                          border: Border.all(color: const Color(0x662563EB)),
                         ),
                         child: const Icon(Icons.school, color: Color(0xFF2563EB), size: 22),
                       ),
-                    Expanded(child: Container(width: 3, color: Color(0x592563EB))),
+                    Expanded(child: Container(width: 3, color: const Color(0x592563EB))),
                     ],
                   ),
                   const SizedBox(width: 14),
-                  // Kolom kanan: kartu isi
                   Expanded(
                     child: Container(
                       margin: const EdgeInsets.only(bottom: 16),
                       padding: const EdgeInsets.all(14),
                       decoration: BoxDecoration(
-                        color: Color(0xFF151B2B),
-                        border: Border.all(color: Color(0xFF242C42)),
+                        color: const Color(0xFF151B2B),
+                        border: Border.all(color: const Color(0xFF242C42)),
                         borderRadius: BorderRadius.circular(14),
                       ),
-                      child: Column(
+                      child: const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
+                          Text(
                             'SD',
                             style: TextStyle(
                               fontSize: 13,
@@ -84,8 +80,8 @@ class EducationPage extends StatelessWidget {
                               color: Color(0xFF60A5FA),
                             ),
                           ),
-                          const SizedBox(height: 4),
-                          const Text(
+                          SizedBox(height: 4),
+                          Text(
                             'SD Negeri 1 Contoh',
                             style: TextStyle(
                               fontSize: 16,
@@ -93,13 +89,13 @@ class EducationPage extends StatelessWidget {
                               color: Color(0xFFE8ECF5),
                             ),
                           ),
-                          const SizedBox(height: 2),
-                          const Text(
+                          SizedBox(height: 2),
+                          Text(
                             '2011 - 2017',
                             style: TextStyle(fontSize: 12, color: Color(0xFF9AA4BC)),
                           ),
-                          const SizedBox(height: 6),
-                          const Text(
+                          SizedBox(height: 6),
+                          Text(
                             'Pendidikan dasar.',
                             style: TextStyle(fontSize: 13, color: Color(0xFF9AA4BC)),
                           ),
@@ -114,7 +110,6 @@ class EducationPage extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  // Kolom kiri: ikon bulat + garis timeline
                   Column(
                     children: [
                       Container(
@@ -122,30 +117,29 @@ class EducationPage extends StatelessWidget {
                         height: 44,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
-                          color: Color(0x262563EB),
+                          color: const Color(0x262563EB),
                           shape: BoxShape.circle,
-                          border: Border.all(color: Color(0x662563EB)),
+                          border: Border.all(color: const Color(0x662563EB)),
                         ),
                         child: const Icon(Icons.school, color: Color(0xFF2563EB), size: 22),
                       ),
-                    Expanded(child: Container(width: 3, color: Color(0x592563EB))),
+                    Expanded(child: Container(width: 3, color: const Color(0x592563EB))),
                     ],
                   ),
                   const SizedBox(width: 14),
-                  // Kolom kanan: kartu isi
                   Expanded(
                     child: Container(
                       margin: const EdgeInsets.only(bottom: 16),
                       padding: const EdgeInsets.all(14),
                       decoration: BoxDecoration(
-                        color: Color(0xFF151B2B),
-                        border: Border.all(color: Color(0xFF242C42)),
+                        color: const Color(0xFF151B2B),
+                        border: Border.all(color: const Color(0xFF242C42)),
                         borderRadius: BorderRadius.circular(14),
                       ),
-                      child: Column(
+                      child: const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
+                          Text(
                             'SMP',
                             style: TextStyle(
                               fontSize: 13,
@@ -153,8 +147,8 @@ class EducationPage extends StatelessWidget {
                               color: Color(0xFF60A5FA),
                             ),
                           ),
-                          const SizedBox(height: 4),
-                          const Text(
+                          SizedBox(height: 4),
+                          Text(
                             'SMP Negeri 1 Contoh',
                             style: TextStyle(
                               fontSize: 16,
@@ -162,13 +156,13 @@ class EducationPage extends StatelessWidget {
                               color: Color(0xFFE8ECF5),
                             ),
                           ),
-                          const SizedBox(height: 2),
-                          const Text(
+                          SizedBox(height: 2),
+                          Text(
                             '2017 - 2020',
                             style: TextStyle(fontSize: 12, color: Color(0xFF9AA4BC)),
                           ),
-                          const SizedBox(height: 6),
-                          const Text(
+                          SizedBox(height: 6),
+                          Text(
                             'Aktif di kegiatan OSIS.',
                             style: TextStyle(fontSize: 13, color: Color(0xFF9AA4BC)),
                           ),
@@ -183,7 +177,6 @@ class EducationPage extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  // Kolom kiri: ikon bulat + garis timeline
                   Column(
                     children: [
                       Container(
@@ -191,30 +184,29 @@ class EducationPage extends StatelessWidget {
                         height: 44,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
-                          color: Color(0x262563EB),
+                          color: const Color(0x262563EB),
                           shape: BoxShape.circle,
-                          border: Border.all(color: Color(0x662563EB)),
+                          border: Border.all(color: const Color(0x662563EB)),
                         ),
                         child: const Icon(Icons.school, color: Color(0xFF2563EB), size: 22),
                       ),
-                    Expanded(child: Container(width: 3, color: Color(0x592563EB))),
+                    Expanded(child: Container(width: 3, color: const Color(0x592563EB))),
                     ],
                   ),
                   const SizedBox(width: 14),
-                  // Kolom kanan: kartu isi
                   Expanded(
                     child: Container(
                       margin: const EdgeInsets.only(bottom: 16),
                       padding: const EdgeInsets.all(14),
                       decoration: BoxDecoration(
-                        color: Color(0xFF151B2B),
-                        border: Border.all(color: Color(0xFF242C42)),
+                        color: const Color(0xFF151B2B),
+                        border: Border.all(color: const Color(0xFF242C42)),
                         borderRadius: BorderRadius.circular(14),
                       ),
-                      child: Column(
+                      child: const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
+                          Text(
                             'SMA',
                             style: TextStyle(
                               fontSize: 13,
@@ -222,8 +214,8 @@ class EducationPage extends StatelessWidget {
                               color: Color(0xFF60A5FA),
                             ),
                           ),
-                          const SizedBox(height: 4),
-                          const Text(
+                          SizedBox(height: 4),
+                          Text(
                             'SMA Negeri 1 Contoh',
                             style: TextStyle(
                               fontSize: 16,
@@ -231,13 +223,13 @@ class EducationPage extends StatelessWidget {
                               color: Color(0xFFE8ECF5),
                             ),
                           ),
-                          const SizedBox(height: 2),
-                          const Text(
+                          SizedBox(height: 2),
+                          Text(
                             '2020 - 2023',
                             style: TextStyle(fontSize: 12, color: Color(0xFF9AA4BC)),
                           ),
-                          const SizedBox(height: 6),
-                          const Text(
+                          SizedBox(height: 6),
+                          Text(
                             'Jurusan IPA.',
                             style: TextStyle(fontSize: 13, color: Color(0xFF9AA4BC)),
                           ),
@@ -252,7 +244,6 @@ class EducationPage extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  // Kolom kiri: ikon bulat + garis timeline
                   Column(
                     children: [
                       Container(
@@ -260,29 +251,28 @@ class EducationPage extends StatelessWidget {
                         height: 44,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
-                          color: Color(0x262563EB),
+                          color: const Color(0x262563EB),
                           shape: BoxShape.circle,
-                          border: Border.all(color: Color(0x662563EB)),
+                          border: Border.all(color: const Color(0x662563EB)),
                         ),
                         child: const Icon(Icons.school, color: Color(0xFF2563EB), size: 22),
                       ),
                     ],
                   ),
                   const SizedBox(width: 14),
-                  // Kolom kanan: kartu isi
                   Expanded(
                     child: Container(
                       margin: const EdgeInsets.only(bottom: 16),
                       padding: const EdgeInsets.all(14),
                       decoration: BoxDecoration(
-                        color: Color(0xFF151B2B),
-                        border: Border.all(color: Color(0xFF242C42)),
+                        color: const Color(0xFF151B2B),
+                        border: Border.all(color: const Color(0xFF242C42)),
                         borderRadius: BorderRadius.circular(14),
                       ),
-                      child: Column(
+                      child: const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
+                          Text(
                             'Kuliah',
                             style: TextStyle(
                               fontSize: 13,
@@ -290,8 +280,8 @@ class EducationPage extends StatelessWidget {
                               color: Color(0xFF60A5FA),
                             ),
                           ),
-                          const SizedBox(height: 4),
-                          const Text(
+                          SizedBox(height: 4),
+                          Text(
                             'Universitas Contoh',
                             style: TextStyle(
                               fontSize: 16,
@@ -299,13 +289,13 @@ class EducationPage extends StatelessWidget {
                               color: Color(0xFFE8ECF5),
                             ),
                           ),
-                          const SizedBox(height: 2),
-                          const Text(
+                          SizedBox(height: 2),
+                          Text(
                             '2023 - Sekarang',
                             style: TextStyle(fontSize: 12, color: Color(0xFF9AA4BC)),
                           ),
-                          const SizedBox(height: 6),
-                          const Text(
+                          SizedBox(height: 6),
+                          Text(
                             'S1 Teknik Informatika.',
                             style: TextStyle(fontSize: 13, color: Color(0xFF9AA4BC)),
                           ),
@@ -317,7 +307,6 @@ class EducationPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 12),
-            // Indikator halaman (titik 3 dari 5)
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -326,7 +315,7 @@ class EducationPage extends StatelessWidget {
                   width: 8,
                   height: 8,
                   decoration: BoxDecoration(
-                    color: Color(0xFF242C42),
+                    color: const Color(0xFF242C42),
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
@@ -335,7 +324,7 @@ class EducationPage extends StatelessWidget {
                   width: 8,
                   height: 8,
                   decoration: BoxDecoration(
-                    color: Color(0xFF242C42),
+                    color: const Color(0xFF242C42),
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
@@ -344,7 +333,7 @@ class EducationPage extends StatelessWidget {
                   width: 24,
                   height: 8,
                   decoration: BoxDecoration(
-                    color: Color(0xFF2563EB),
+                    color: const Color(0xFF2563EB),
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
@@ -353,7 +342,7 @@ class EducationPage extends StatelessWidget {
                   width: 8,
                   height: 8,
                   decoration: BoxDecoration(
-                    color: Color(0xFF242C42),
+                    color: const Color(0xFF242C42),
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
@@ -362,14 +351,13 @@ class EducationPage extends StatelessWidget {
                   width: 8,
                   height: 8,
                   decoration: BoxDecoration(
-                    color: Color(0xFF242C42),
+                    color: const Color(0xFF242C42),
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
               ],
             ),
             const SizedBox(height: 18),
-            // Tombol navigasi: Kembali = pop, Lanjut = push
             Row(
               children: [
                 Expanded(
